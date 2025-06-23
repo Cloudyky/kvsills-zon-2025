@@ -10,16 +10,23 @@
     <div class="nav">
         <h2>Bouncing Ball Game</h2>
         <ul>
-            <li class="active">C-shape</li>
-            <li>U-shape</li>
-            <li>Inverse C-shape</li>
-            <li>Inverse U-shape</li>
+            <li class="active" id="inverse_u_shape">Inverse U-shape</li>
+            <li id="inverse_c_shape">Inverse C-shape</li>
+            <li id="u_shape">U-shape</li>
+            <li id="c_shape">C-shape</li>
         </ul>
     </div>
 
-    <div class="game-container">
+    <div class="game-wrapper">
 
-
+        <div class="scoreboard">
+            <span>Score: <span id="score">0</span></span>
+            <span>Lives: <span id="lives">0</span></span>
+            <span>Timer: <span id="timer">0</span>s</span>
+        </div>
+        <div class="game-container">
+            <canvas id="myCanvas"></canvas>
+        </div>
 
     </div>
     

@@ -48,3 +48,46 @@ body{
 .nav ul .active{
     background-color: #f0f0f0;
 }
+
+.game-wrapper{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 70px;
+}
+
+.scoreboard{
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    display: flex;
+    gap: 200px;
+    font-size: 1.2rem;
+    width: 50%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.game-container{
+    width: 60%;
+    height: 55%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.game-container canvas{
+    width: 90%;
+    border: 3px solid black;
+    border-radius: 20px 20px 0 0;
+    border-bottom: none;
+    display: block;
+    margin: auto;
+}
