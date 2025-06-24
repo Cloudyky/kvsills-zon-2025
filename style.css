@@ -84,10 +84,37 @@ body{
 }
 
 .game-container canvas{
-    width: 90%;
+    width: 80%;
     border: 3px solid black;
     border-radius: 20px 20px 0 0;
-    border-bottom: none;
     display: block;
     margin: auto;
+}
+
+/* C-shape = buka kanan (default) */
+canvas.c-shape {
+    border: 3px solid black;
+    border-right: none;
+    border-radius: 20px 0 0 20px;
+}
+
+/* U-shape = buka atas */
+canvas.u-shape {
+    border: 3px solid black;
+    border-top: none;
+    border-radius: 0 0 20px 20px;
+}
+
+/* Inverse C = buka kiri */
+canvas.inverse-c-shape {
+    border: 3px solid black;
+    border-left: none;
+    border-radius: 0 20px 20px 0;
+}
+
+/* Inverse U = buka bawah */
+canvas.inverse-u-shape {
+    border: 3px solid black;
+    border-bottom: none;
+    border-radius: 20px 20px 0 0;
 }
